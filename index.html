@@ -6,25 +6,219 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Cryp</title>
+    <title>Home Page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><a class="logo__link" href="#"><svg class="logo__icon" width="65" height="24"><use href="./images/icons.svg#icon-logo"></use></svg></a></div>
+        <nav class="nav">
+          <li class="nav__item"><a class="nav__link" href="#">products</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">partners</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">support</a></li>
+        </nav>
+        <div class="language"><text>Eng</text><a href="#"></a></div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title title--light">Secure</h1>
+          <h1 class="title title--dark">solution for protection</h1>
+          <h1 class="title title--light">your crypto assets</h1>
+          <h1 class="title title--dark">.</h1>
+          <h3 class="text text--dark">Storing offline your cold wallet recovery phrase.</h3>
+          <button class="hero__btn" type="button">What's recovery phrase?</button>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <text class="support__text">seed support</text>
+          <h3 class="text text--light">Double-sided storage supports<br />(BIP39 specifies only the first 4 letters<br />are needed to identify each word)</h3>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <ul class="products__list">
+            <li class="products__item">
+              <img src="" alt="case x-pro" width="473"></img>
+              <h1 class="title title--dark">case</h1>
+              <h1 class="title title--light">X pro</h1>
+                <h3 class="text text--dark">Introducing the new model with</h3>
+                <h3 class="text text--light">built in NFC chip</h3>
+                <h3 class="text text--dark">- case</h3>
+                <h3 class="text text--light">X pro.</h3>
+                <button class="products__btn">more info</button><a class="products__link" href="#">
+                  <svg class="products__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-arrow"></use></svg></a>
+                <button class="products__btn">shop now</button><a class="products__link" href="#">
+                  <svg class="products__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-arrow"></use></svg></a>
+            </li>
+            <li class="products__item">
+              <img src="" alt="case x" width="473"></img>
+              <h1 class="title title--dark">case</h1>
+              <h1 class="title title--light">X</h1>
+                <h3 class="text text--dark">Hodl your</h3>
+                <h3 class="text text--light">recovery phrase</h3>
+                <h3 class="text text--dark">for hardware and software BIP39 wallets.</h3>
+                <text class="products__btn">more info</text><a class="products__link" href="#">
+                  <svg class="products__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-arrow"></use></svg></a>
+                <text class="products__btn">shop now</text><a class="products__link" href="#">
+                  <svg class="products__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-arrow"></use></svg></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <text class="works__text">how it works?</text>
+          <h3 class="text text__light">Simply bring your wallet up to your phone and wait a few seconds.</h3>
+        </div>
+      </section>
+      <section class="next">
+        <div class="container">
+          <div>
+            <h2 class="subtitle subtitle--dark">The</h2>
+            <h2 class="subtitle subtitle--light">next generation</h2>
+            <h2 class="subtitle subtitle--dark">of recovery phrase</h2>
+            <h2 class="subtitle subtitle--light">protection</h2>
+          </div>
+          <h3 class="text text--dark">The same technology that lets people<br />pay for things with their phones.</h3>
+          <button class="hero__btn" type="button">Learn more about NFC</button>
+        </div>
+        <ul class="next__list">
+          <li class="next__item">
+            <svg class="next__icon"><use href="#"></use></svg>
+            <h3>Safe</h3>
+            <text>Store the Passphrase on your Cryp cloud account</text>
+          </li>
+          <li class="next__item">
+            <svg class="next__icon"><use href="#"></use></svg>
+            <h3>Reliable</h3>
+            <text>Don't be afraid to forget the place</text>
+          </li>
+          <li class="next__item">
+            <svg class="next__icon"><use href="#"></use></svg>
+            <h3>Confidential</h3>
+            <text>Only you can connect to your recovery phrase wallet</text>
+          </li>
+          <li class="next__item">
+            <svg class="next__icon"><use href="#"></use></svg>
+            <h3>Practical</h3>
+            <text>May leave contacts for third party</text>
+          </li>
+        </ul>
+      </section>
+      <section class="compatible">
+        <div class="container">
+          <ul class="compatible__list">
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg class="compatible__icon"></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+            <li class="compatible__item">
+              <svg></svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="visit">
+       <div class="container">
+          <h2 class="subtitle subtitle--dark">Visit</h2>
+          <h2 class="subtitle subtitle--light">our blog</h2>
+          <h2 class="subtitle subtitle--dark">to see more.</h2>
+          <text>visit blog</text><svg class=""><use></use></svg>
+        <ul class="visits__list">
+          <li class="visit__item">
+            <img class="visit__image">
+            <text class="visit__text">money</text>
+            <datalist class="visit__date"></datalist>
+            <a class="visit__link" href="#">New possibilities for the security business with Ajax PSU</a>
+          </li>
+          <li class="visit__item">
+            <img class="visit__image">
+            <text class="visit__text">technology</text>
+            <datalist class="visit__date"></datalist>
+            <a class=visit__link" href="#">Cryp Systems partners with security giant G4S</a>
+          </li>
+        </ul>
+       </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__index">
+          <h2>crypted by cryp.</h2>
+          <text>Copyright 2021 Cryp,<br /> All rights reserved.</text>
+        </div>
+        <div class="footer__group">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link">partners</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">support</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">products</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">case x pro</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link">case x</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item">
+              <svg class="footer-socials__icon"><use href="#"></use></svg>
+            </li>
+            <li class="footer-socials__item">
+              <svg class="footer-socials__icon"><use href="#"></use></svg>
+            </li>
+            <li class="footer-socials__item">
+              <svg class="footer-socials__icon"><use href="#"></use></svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__tabs">
+          <text>Newsletter about crypto</text>
+          <label class="footer__label"><input type="email"></label>
+          <button type="button"></button>
+        </div>
+      </div>
+    </footer>
+  </body>
