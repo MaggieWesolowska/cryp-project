@@ -1,0 +1,30 @@
+:root {
+    --main-font: "Questrial", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+    --main: #FFFFFF;
+    --second: white 50%;
+    --accent: #5D8FEE;
+    --background: #202124;
+    --border: #36373A;
+    --borderTwo: #262C38;
+    --button: #434447;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--main-font);
+  color: var(--main);
+  background-color: var(--background);
+}
+img {
+  display: block;
+}

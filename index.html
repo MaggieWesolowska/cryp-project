@@ -7,6 +7,9 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Questrial&display=swap" rel="stylesheet">  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -18,30 +21,33 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo"><a class="logo__link" href="#"><svg class="logo__icon" width="65" height="24"><use href="./images/icons.svg#icon-logo"></use></svg></a></div>
+        <div class="logo"><a class="logo__link" href="#"><svg class="logo__icon" width="65" height="24">
+          <use href="./images/icons.svg#icon-logo"></use></svg></a></div>
+        <svg class="menu-btn" width="64" height="64"><use href="./images/icons.svg#icon-menu-btn"></use></svg>
         <nav class="nav">
           <li class="nav__item"><a class="nav__link" href="#">products</a></li>
           <li class="nav__item"><a class="nav__link" href="#">partners</a></li>
           <li class="nav__item"><a class="nav__link" href="#">blog</a></li>
           <li class="nav__item"><a class="nav__link" href="#">support</a></li>
         </nav>
-        <div class="language"><text>Eng</text><a href="#"></a></div>
+        <div class="lang"><text>Eng</text><a href="#"></a></div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="title title--light">Secure</h1>
-          <h1 class="title title--dark">solution for protection</h1>
-          <h1 class="title title--light">your crypto assets</h1>
-          <h1 class="title title--dark">.</h1>
+          <h1 class="title title--light">Secure
+            <span class="title title--dark">solution for protection</span>
+            <span class="title title--light">your crypto assets</span>
+            <span class="title title--dark">.</span>
+          </h1>
           <h3 class="text text--dark">Storing offline your cold wallet recovery phrase.</h3>
-          <button class="hero__btn" type="button">What's recovery phrase?</button>
+          <button class="button" type="button">What's recovery phrase?</button>
         </div>
       </section>
       <section class="support">
         <div class="container">
-          <text class="support__text">seed support</text>
+          <text class="sub-text">seed support</text>
           <h3 class="text text--light">Double-sided storage supports<br />(BIP39 specifies only the first 4 letters<br />are needed to identify each word)</h3>
         </div>
       </section>
@@ -50,78 +56,79 @@
           <ul class="products__list">
             <li class="products__item">
               <img src="" alt="case x-pro" width="473"></img>
-              <h1 class="title title--dark">case</h1>
-              <h1 class="title title--light">X pro</h1>
-                <h3 class="text text--dark">Introducing the new model with</h3>
-                <h3 class="text text--light">built in NFC chip</h3>
-                <h3 class="text text--dark">- case</h3>
-                <h3 class="text text--light">X pro.</h3>
-                <button class="products__btn">more info</button><a class="products__link" href="#">
+              <h1 class="title title--dark">case<span class="title title--light"> X pro</span></h1>
+                <h3 class="text text--dark">Introducing the new model with
+                  <span class="text text--light">built in NFC chip</span>
+                  <span class="text text--dark">- case</span>
+                  <span class="text text--light">X pro.</span>
+                </h3>
+                <div class="sub-text">more info</div><a class="products__link" href="#">
                   <svg class="products__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-arrow"></use></svg></a>
-                <button class="products__btn">shop now</button><a class="products__link" href="#">
+                <div class="sub-text">shop now</div><a class="products__link" href="#">
                   <svg class="products__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-arrow"></use></svg></a>
             </li>
             <li class="products__item">
               <img src="" alt="case x" width="473"></img>
-              <h1 class="title title--dark">case</h1>
-              <h1 class="title title--light">X</h1>
-                <h3 class="text text--dark">Hodl your</h3>
-                <h3 class="text text--light">recovery phrase</h3>
-                <h3 class="text text--dark">for hardware and software BIP39 wallets.</h3>
-                <text class="products__btn">more info</text><a class="products__link" href="#">
+              <h1 class="title title--dark">case<span class="title title--light"> X</span></h1>
+                <h3 class="text text--dark">Hodl your
+                  <span class="text text--light">recovery phrase</span>
+                  <span class="text text--dark">for hardware and software BIP39 wallets.</span>
+                </h3>
+                <div class="sub-text">more info</div><a class="products__link" href="#">
                   <svg class="products__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-arrow"></use></svg></a>
-                <text class="products__btn">shop now</text><a class="products__link" href="#">
+                <div class="sub-text">shop now</div><a class="products__link" href="#">
                   <svg class="products__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-arrow"></use></svg></a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="works">
+      <section class="tech">
         <div class="container">
-          <text class="works__text">how it works?</text>
+          <p class="sub-text">how it works?</p>
           <h3 class="text text__light">Simply bring your wallet up to your phone and wait a few seconds.</h3>
         </div>
-      </section>
-      <section class="next">
-        <div class="container">
-          <div>
-            <h2 class="subtitle subtitle--dark">The</h2>
-            <h2 class="subtitle subtitle--light">next generation</h2>
-            <h2 class="subtitle subtitle--dark">of recovery phrase</h2>
-            <h2 class="subtitle subtitle--light">protection</h2>
-          </div>
+          <h2 class="subtitle subtitle--dark">The
+            <span class="subtitle subtitle--light">next generation</span>
+            <span class="subtitle subtitle--dark">of recovery phrase</span>
+            <span class="subtitle subtitle--light">protection</span>
+          </h2>
           <h3 class="text text--dark">The same technology that lets people<br />pay for things with their phones.</h3>
           <button class="hero__btn" type="button">Learn more about NFC</button>
         </div>
-        <ul class="next__list">
-          <li class="next__item">
-            <svg class="next__icon"><use href="#"></use></svg>
+        <ul class="tech__list">
+          <li class="tech__item">
+            <svg class="tech__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-tech1"></use></svg>
             <h3>Safe</h3>
-            <text>Store the Passphrase on your Cryp cloud account</text>
+            <p>Store the Passphrase on your Cryp cloud account</p>
           </li>
-          <li class="next__item">
-            <svg class="next__icon"><use href="#"></use></svg>
+          <li class="tech__item">
+            <svg class="tech__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-tech2"></use></svg>
             <h3>Reliable</h3>
-            <text>Don't be afraid to forget the place</text>
+            <p>Don't be afraid to forget the place</p>
           </li>
-          <li class="next__item">
-            <svg class="next__icon"><use href="#"></use></svg>
+          <li class="tech__item">
+            <svg class="tech__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-tech3"></use></svg>
             <h3>Confidential</h3>
-            <text>Only you can connect to your recovery phrase wallet</text>
+            <p>Only you can connect to your recovery phrase wallet</p>
           </li>
-          <li class="next__item">
-            <svg class="next__icon"><use href="#"></use></svg>
+          <li class="tech__item">
+            <svg class="tech__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-tech4"></use></svg>
             <h3>Practical</h3>
-            <text>May leave contacts for third party</text>
+            <p>May leave contacts for third party</p>
           </li>
         </ul>
       </section>
       <section class="compatible">
         <div class="container">
+          <h4 class="compatible__title">compatible with</h4>
           <ul class="compatible__list">
             <li class="compatible__item">
               <svg></svg>
@@ -152,21 +159,22 @@
       </section>
       <section class="visit">
        <div class="container">
-          <h2 class="subtitle subtitle--dark">Visit</h2>
-          <h2 class="subtitle subtitle--light">our blog</h2>
-          <h2 class="subtitle subtitle--dark">to see more.</h2>
-          <text>visit blog</text><svg class=""><use></use></svg>
+        <h2 class="subtitle subtitle--dark">Visit
+          <span class="subtitle subtitle--light">our blog</span>
+          <span class="subtitle subtitle--dark">to see more.</span>
+        </h2>
+        <div class="sub-text">visit blog</div><a href="#"><svg class=""><use></use></svg></a>
         <ul class="visits__list">
           <li class="visit__item">
             <img class="visit__image">
-            <text class="visit__text">money</text>
-            <datalist class="visit__date"></datalist>
+            <p class="sub-text">money</p>
+            <time class="visit__date" datetime="2021-05-20">20.05.2021</time>
             <a class="visit__link" href="#">New possibilities for the security business with Ajax PSU</a>
           </li>
           <li class="visit__item">
             <img class="visit__image">
-            <text class="visit__text">technology</text>
-            <datalist class="visit__date"></datalist>
+            <p class="sub-text">technology</p>
+            <time class="visit__date" datetime="2021-05-20">20.05.2021</time>
             <a class=visit__link" href="#">Cryp Systems partners with security giant G4S</a>
           </li>
         </ul>
@@ -177,7 +185,7 @@
       <div class="container">
         <div class="footer__index">
           <h2>crypted by cryp.</h2>
-          <text>Copyright 2021 Cryp,<br /> All rights reserved.</text>
+          <div>Copyright 2021 Cryp,<br /> All rights reserved.</div>
         </div>
         <div class="footer__group">
           <ul class="footer__list">
@@ -204,13 +212,13 @@
         <div class="footer-socials">
           <ul class="footer-socials__list">
             <li class="footer-socials__item">
-              <svg class="footer-socials__icon"><use href="#"></use></svg>
+              <svg class="footer-socials__icon" width="20" height="20"><use href="./images/icons-social.svg#icon-facebook"></use></svg>
             </li>
             <li class="footer-socials__item">
-              <svg class="footer-socials__icon"><use href="#"></use></svg>
+              <svg class="footer-socials__icon" width="20" height="20"><use href="./images/icons-social.svg#instagram"></use></svg>
             </li>
             <li class="footer-socials__item">
-              <svg class="footer-socials__icon"><use href="#"></use></svg>
+              <svg class="footer-socials__icon" width="20" height="20"><use href="./images/icons-social.svg#twitter"></use></svg>
             </li>
           </ul>
         </div>
