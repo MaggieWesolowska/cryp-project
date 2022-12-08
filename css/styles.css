@@ -184,3 +184,35 @@ img {
 .products__image {
   display: block;
 }
+.tech__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.tech__item {
+  flex-basis: calc((100% - 90px)/3);
+  border: solid 1px var(--borderTwo);
+  border-radius: 20px;
+  padding: 32px;
+}
+.tech__title {
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 8px;
+}
+.tech__text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--secondaryC);
+  line-height: 1.45;
+}
+.wallets__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 33px 0;
+}
