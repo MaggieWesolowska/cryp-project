@@ -22,7 +22,7 @@
     <header class="header">
       <div class="container">
         <div class="header__group">
-          <a class="logo" href="#"><svg class="logo__icon" width="56" height="20">
+          <a class="logo" href="#"><svg class="logo__icon" width="65" height="24">
             <use href="./images/icons.svg#icon-logo"></use></svg></a>
           <nav class="nav">
             <li class="nav__item"><a class="nav__link" href="#">products</a></li>
@@ -38,12 +38,14 @@
       <section class="hero">
         <div class="container">
           <div class="hero__group">
-            <h1 class="title title--light">Secure
-              <span class="title title--dark">solution for protection</span>
-              <span class="title title--light">your crypto assets</span>
-              <span class="title title--dark">.</span>
-            </h1>
-            <h3 class="text text--dark">Storing offline your cold wallet recovery phrase.</h3>
+            <div class="hero__accent">
+              <h1 class="title title--light">Secure
+                <span class="title title--dark">solution for protection</span>
+                <span class="title title--light">your crypto assets</span>
+              </h1>
+            </div>
+            
+            <h3 class="text text--dark">Storing offline your cold wallet<br/>recovery phrase.</h3>
             <button class="button" type="button">What's recovery phrase?</button>
           </div>
         </div>
@@ -52,7 +54,7 @@
         <div class="container">
           <div class="support__group">
             <div class="sub-text">seed support</div>
-            <h3 class="text text--light">Double-sided storage supports<br />
+            <h3 class="support__text">Double-sided storage supports<br />
               12, 18 and 24-word recovery phrase<br />
               (BIP39 specifies only the first 4 letters<br />
               are needed to identify each word)
@@ -60,8 +62,8 @@
           </div>
           <div class="support__accent">
             <img class="support__image"
-              src="./images/support/support@1.jpg"
-              srcset="./images/support/support@2.jpg 2x"
+              src="./images/support/support@1.png"
+              srcset="./images/support/support@2.png 2x"
               alt="case schematics"
               width="335">
           </div>
@@ -71,7 +73,11 @@
         <div class="container">
           <ul class="products__list">
             <li class="products__item">
-              <img src="" alt="case x-pro" width="473"></img>
+              <img class="products__image"
+              src="./images/products/products1@1.png"
+              srcset="./images/products/products1@2.png 2x"
+              alt="case proX"
+              width="473">
               <h1 class="title title--dark">case<span class="title title--light"> X pro</span></h1>
                 <h3 class="text text--dark">Introducing the new model with
                   <span class="text text--light">built in NFC chip</span>
@@ -86,7 +92,11 @@
                     <use href="./images/icons.svg#icon-arrow"></use></svg></a>
             </li>
             <li class="products__item">
-              <img src="" alt="case x" width="473"></img>
+              <img class="products__image"
+              src="./images/products/products2@1.png"
+              srcset="./images/products/products2@2.png 2x"
+              alt="case pro"
+              width="400">
               <h1 class="title title--dark">case<span class="title title--light"> X</span></h1>
                 <h3 class="text text--dark">Hodl your
                   <span class="text text--light">recovery phrase</span>
@@ -104,6 +114,11 @@
       </section>
       <section class="tech">
         <div class="container">
+          <img class="tech__image"
+              src="./images/tech/tech@1.png"
+              srcset="./images/tech/tech@2.png 2x"
+              alt="case proX"
+              width="50%">
           <p class="sub-text">how it works?</p>
           <h3 class="text text__light">Simply bring your wallet up to your phone and wait a few seconds.</h3>
         </div>
@@ -113,62 +128,94 @@
             <span class="subtitle subtitle--light">protection</span>
           </h2>
           <h3 class="text text--dark">The same technology that lets people<br />pay for things with their phones.</h3>
-          <button class="hero__btn" type="button">Learn more about NFC</button>
+          <button class="button" type="button">Learn more about NFC</button>
         </div>
         <ul class="tech__list">
           <li class="tech__item">
-            <svg class="tech__icon" width="48" height="48">
+            <svg class="tech__icon" width="60" height="60">
               <use href="./images/icons.svg#icon-tech1"></use></svg>
             <h3>Safe</h3>
             <p>Store the Passphrase on your Cryp cloud account</p>
           </li>
           <li class="tech__item">
-            <svg class="tech__icon" width="48" height="48">
+            <svg class="tech__icon" width="60" height="60">
               <use href="./images/icons.svg#icon-tech2"></use></svg>
             <h3>Reliable</h3>
             <p>Don't be afraid to forget the place</p>
           </li>
           <li class="tech__item">
-            <svg class="tech__icon" width="48" height="48">
+            <svg class="tech__icon" width="60" height="60">
               <use href="./images/icons.svg#icon-tech3"></use></svg>
             <h3>Confidential</h3>
             <p>Only you can connect to your recovery phrase wallet</p>
           </li>
           <li class="tech__item">
-            <svg class="tech__icon" width="48" height="48">
+            <svg class="tech__icon" width="60" height="60">
               <use href="./images/icons.svg#icon-tech4"></use></svg>
             <h3>Practical</h3>
             <p>May leave contacts for third party</p>
           </li>
         </ul>
       </section>
-      <section class="compatible">
+      <section class="wallets">
         <div class="container">
-          <h4 class="compatible__title">compatible with</h4>
-          <ul class="compatible__list">
-            <li class="compatible__item">
-              <svg></svg>
+          <h4 class="wallets__title">compatible with</h4>
+          <ul class="wallets__list">
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/ledger.png"
+              srcset="./images/wallets/ledger@2.png 2x"
+              alt="ledger"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg class="compatible__icon"></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/trezor.png"
+              srcset="./images/wallets/trezor@2.png 2x"
+              alt="trezor"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/bitbox.png"
+              srcset="./images/wallets/bitbox@2 2x"
+              alt="bitbox"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/safepal.png"
+              srcset="./images/wallets/safepal@2.png 2x"
+              alt="safe pal"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/coolwallet.png"
+              srcset="./images/wallets/coolwallet@2.png 2x"
+              alt="ledger"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/keepkey.png"
+              srcset="./images/wallets/keepkey@2.png 2x"
+              alt="ledger"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/coldcard.png"
+              srcset="./images/wallets/coldcard@2.png 2x"
+              alt="ledger"
+              width="25%">
             </li>
-            <li class="compatible__item">
-              <svg></svg>
+            <li class="wallets__item">
+              <img class="tech__image"
+              src="./images/wallets/cobo.png"
+              srcset="./images/wallets/cobo@2.png 2x"
+              alt="ledger"
+              width="25%">
             </li>
           </ul>
         </div>
