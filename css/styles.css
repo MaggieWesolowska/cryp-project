@@ -2,7 +2,7 @@
   --mainF: "Questrial", sans-serif;
   --secondaryF: "Poppins", sans-serif;
   --mainC: #ffffff;
-  --secondaryC: radial-gradient rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.7) 100%;
+  --secondaryC: rgba(255, 255, 255, 0.3);
   --accent: #5d8fee;
   --background: #202124;
   --border: #36373a;
@@ -301,16 +301,22 @@ img {
   flex-wrap: wrap;
   padding-bottom: 130px;
 }
+.footer {
+  display: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer__index {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .footer__list {
-  list-style-type: none;
   display: flex;
-  flex-basis: calc((100% - 70)/2);
+  flex-wrap: wrap;
   gap: 40px;
+  list-style-type: none;
 }
 .footer-socials__list {
   list-style-type: none;
