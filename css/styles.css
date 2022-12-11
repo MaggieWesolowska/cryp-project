@@ -2,7 +2,7 @@
   --mainF: "Questrial", sans-serif;
   --secondaryF: "Poppins", sans-serif;
   --mainC: #ffffff;
-  --secondaryC: rgba(255, 255, 255, 0.3);
+  --secondaryC: radial-gradient rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.7) 100%;
   --accent: #5d8fee;
   --background: #202124;
   --border: #36373a;
